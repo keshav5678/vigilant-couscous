@@ -1,0 +1,11 @@
+[project]
+name = "greetingApp"
+version = "1.0.0"
+description = "a greeting app where you can create custom greetings."
+dependencies = [
+    "flask", "mysql-connector-python", "qrcode", "argon2-cffi", "Flask-Cors"
+]
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"

@@ -6,6 +6,6 @@ everything is in a few files, although modularisation (modularization) is prefer
 
 ## Demo
 
-here is a demo showcasing the app
+the demo video is provided at demo.mp4 in this repository
 
-demo.mp4
+

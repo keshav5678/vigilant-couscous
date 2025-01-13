@@ -18,12 +18,9 @@ everything is in a few files, although modularisation (modularization) is prefer
 ## More info
 
 **awesome stuff used:**
-html5
-
-css
-
-python
-
+html5,
+css,
+python,
 sql (mysql)
 
 ## License

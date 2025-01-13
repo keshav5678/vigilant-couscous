@@ -13,7 +13,6 @@ everything is in a few files, although modularisation (modularization) is prefer
 - [ ] Landing page
 - [ ] More themes
 - [ ] Be able to see your greeting cards
-- [ ] Better design
 
 ## More info
 

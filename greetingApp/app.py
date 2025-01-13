@@ -7,27 +7,30 @@ import random, string, qrcode, qrcode.image.svg, argon2
 
 factory = qrcode.image.svg.SvgPathImage
 
-mysql_config = dotenv_values(".env")
+mysql_config_and_secret_key = dotenv_values(".env")
 
 app = Flask(__name__)
 cors = CORS(app)
-app.secret_key = urandom(64).hex()
+app.secret_key = mysql_config_and_secret_key["SECRET_KEY"]
 ALLOWED_EXTENSIONS = {"gif"}
-app.config["UPLOAD_FOLDER"] = r"C:\Users\Keshav\keshav_projects_4\greeting_website\static\gifs"
+
+# app.config["UPLOAD_FOLDER"] = "greetingApp/static/gifs"  => commented for now
 
 def randomword(length):
    letters = string.ascii_lowercase
    return ''.join(random.choice(letters) for i in range(length))
 
+"""
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+"""
 
 database = mysql.connector.connect(
-  host=mysql_config["HOST"],
-  user=mysql_config["USER"],
-  password=mysql_config["PASSWORD"],
-  database=mysql_config["DATABASE"]
+    host=mysql_config_and_secret_key["HOST"],
+    user=mysql_config_and_secret_key["USER"],
+    password=mysql_config_and_secret_key["PASSWORD"],
+    database=mysql_config_and_secret_key["DATABASE"]
 )
 cursor = database.cursor()
 

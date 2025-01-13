@@ -7,6 +7,9 @@ everything is in a few files, although modularisation (modularization) is prefer
 
 [See the demo video](demo.mp4)
 
+
+<img src="screenshot.png" width="200px" />
+
 ## features needed
 - [ ] More features for editor ("editor" -> editor)
 - [ ] More ways to share (No email sharing there currently 😭) and make sharing page look better

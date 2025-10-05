@@ -4,7 +4,7 @@ A small e-greetings web app made with flask that lets you make custom greetings.
 
 ## Demo
 
-[See the demo video](demo.mp4)
+https://github.com/user-attachments/assets/a55188a7-1084-49c3-bf84-4f5c1d886d12
 
 ## License
 

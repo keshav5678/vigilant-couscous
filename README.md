@@ -10,4 +10,9 @@ https://github.com/user-attachments/assets/a55188a7-1084-49c3-bf84-4f5c1d886d12
 
 See [LICENSE](LICENSE) for more info.
 
+___
+
+> [!IMPORTANT]
+> see [src/greetingApp/static/gifs/README.md](src/greetingApp/static/gifs/README.md)
+
 
